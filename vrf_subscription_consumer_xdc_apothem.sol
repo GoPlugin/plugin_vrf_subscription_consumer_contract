@@ -56,11 +56,11 @@ contract VRFv2Consumer is VRFConsumerBaseV2, ConfirmedOwner {
     constructor(
         uint64 subscriptionId
     )
-        VRFConsumerBaseV2(0x4D58a57262dcD9607591f09cDFBA4133F5d58387)
+        VRFConsumerBaseV2(0x57b8b03EaAd46C6E2e88dec6d1B6AE119621679f)
         ConfirmedOwner(msg.sender)
     {
         COORDINATOR = VRFCoordinatorV2Interface(
-            0x4D58a57262dcD9607591f09cDFBA4133F5d58387
+            0x57b8b03EaAd46C6E2e88dec6d1B6AE119621679f
         );
         s_subscriptionId = subscriptionId;
     }
